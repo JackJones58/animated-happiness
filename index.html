@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: blue;
+            animation: colorChange 4s linear infinite;
+        }
+        @keyframes colorChange {
+            0% { background-color: blue; }
+            50% { background-color: yellow; }
+            100% { background-color: blue; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animated Happiness</h1>
+    <p>Watch the background change colors!</p>
+    <button onclick="changeBackgroundColor()">Make it Red</button>
+
+    <script>
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+</html>
